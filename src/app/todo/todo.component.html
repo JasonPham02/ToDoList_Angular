@@ -2,12 +2,10 @@
 
 <h2>To Do List</h2>
 
-<input type="text"[(ngModel)]="task_var" placeholder="Add a task here">
-<button>Add</button>
+<input type="text" [(ngModel)]="task_var" placeholder="Add a task here" />
+<button (click)="addTask()">Add</button>
 
 <h3>To Do List</h3>
 <ul>
-    <li>Task 1</li>
-    <li>Task 2</li>
-    <li>Task 3</li>
+    <li *ngFor="let list of lists">Task 1 {{ lists }}</li>
 </ul>

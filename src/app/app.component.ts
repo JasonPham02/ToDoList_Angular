@@ -3,7 +3,6 @@ import { FormsModule } from '@angular/forms';
 import { TodoComponent } from './todo/todo.component';
 
 
-
 @Component({
   selector: 'app-root',
   standalone: true,

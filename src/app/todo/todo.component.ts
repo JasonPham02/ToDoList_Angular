@@ -21,5 +21,10 @@ export class TodoComponent {
     console.log(this.lists);
   }
 
+  deleteTask(index: number) {
+    this.lists.splice(index, 1); //delete the task from the list
+  }
+  
+
 
 }

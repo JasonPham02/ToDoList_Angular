@@ -7,5 +7,5 @@
 
 <h3>To Do List</h3>
 <ul>
-    <li *ngFor="let list of lists">Task 1 {{ lists }}</li>
+    <li *ngFor="let list of lists; let i = index">Task 1 {{ lists }} <button (click)="deleteTask(i)">Delete</button> </li>
 </ul>

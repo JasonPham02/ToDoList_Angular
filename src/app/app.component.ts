@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { TodoComponent} from './todo/todo.component';
+import { FormsModule } from '@angular/forms';
+import { TodoComponent } from './todo/todo.component';
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [TodoComponent],
+  standalone: true,
+  imports: [FormsModule, TodoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
-
+  title = 'todo-list-app';
 }

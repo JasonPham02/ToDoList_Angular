@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-todo',
-  imports: [AppComponent],
+  standalone: true,
+  imports: [FormsModule],
   templateUrl: './todo.component.html',
   styleUrl: './todo.component.css'
 })
@@ -18,5 +19,5 @@ export class TodoComponent {
     }
   }
 
-  
+
 }
